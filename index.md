@@ -1,8 +1,19 @@
 ---
 layout: default
-title: Monisha Punith
+title: "Monisha Punith"
 ---
 
-# Hello, World!
-This is the main content of the homepage.
-Fix front matter format for index.md.
+# Welcome to My Teaching Page
+This is a place to share my courses, resources, and teaching materials.
+
+## Navigation
+- [About Me](about.html)
+- [Teaching](teaching.html)
+
+## Courses
+- [Course 1](course1.html)
+- [Course 2](course2.html)
+
+## Resources
+- [Resource 1](resource1.html)
+- [Resource 2](resource2.html)
