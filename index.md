@@ -18,5 +18,10 @@ title: "Monisha Punith"
   <li>Labour economics</li>
   <li>Data Science</li>
 </ul>
+ </p>
+    <h3>Contact</h3>
+    <ul class="contact-info">
+      <li>Email: <a href="mailto:monisha.punith@uantwerpen.be">monishapunith@uantwerpen.be</a></li>
+    </ul>
   </div>
 </div>
