@@ -3,17 +3,20 @@ layout: default
 title: "Monisha Punith"
 ---
 
-# Welcome to My Teaching Page
-This is a place to share my courses, resources, and teaching materials.
-
-## Navigation
-- [About Me](about.html)
-- [Teaching](teaching.html)
-
-## Courses
-- [Course 1](course1.html)
-- [Course 2](course2.html)
-
-## Resources
-- [Resource 1](resource1.html)
-- [Resource 2](resource2.html)
+<div class="intro-section">
+  <div class="profile-image">
+    <!-- Add your profile image file path here -->
+    <img src="assets/monisha-punith.jpg" alt="Monisha Punith" />
+  </div>
+  <div class="bio-content">
+    <h2>Welcome</h2>
+    <p>
+      I’m a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">University of Antwerp</a>.
+    </p>
+    <p>
+      Research interests: <ul>
+  <li>Labour economics</li>
+  <li>Data Science</li>
+</ul>
+  </div>
+</div>
