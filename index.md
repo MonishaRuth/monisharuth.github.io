@@ -6,7 +6,7 @@ title: "Monisha Punith"
 <div class="intro-section">
   <div class="profile-image">
     <!-- Add your profile image file path here -->
-    <img src="assets/Monisha Punith(5).jpg" alt="Monisha Punith"/>
+    <img src="assets/mona.jpg" alt="Monisha Punith"/>
   </div>
   <div class="bio-content">
     <h2>Welcome</h2>
