@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Course 1
+title: Research
 ---
 
-# Course 1: Introduction to Programming
+# Research
+## Working Papers
 
-Here are the course materials and resources:
+### Artificial Intelligence and changing skill demands : Evidence from the Belgian labor market.
 
-- [Lecture 1 Slides](slides/lecture1.pdf)
-- [Lecture 2 Slides](slides/lecture2.pdf)
