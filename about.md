@@ -1,2 +1,2 @@
-[Back to Home](/index.html)
+[Back to Home](/index.md)
 
