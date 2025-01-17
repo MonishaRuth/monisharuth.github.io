@@ -9,14 +9,12 @@ title: "Monisha Punith"
     <img src="assets/mona.JPG" alt="Monisha Punith"/>
   </div>
   <div class="bio-content">
-    <h2>Welcome</h2>
+    <h2>About me</h2>
     <p>
-      I’m a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">University of Antwerp</a>.
-    </p>
-    <p>
-      Research interests: <ul>
-  <li>Labour economics</li>
-  <li>Data Science</li>
+      I’m a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank"> <AI-EconLab </a>. 
+
+My primary research interests are applied microeconometrics, public economics and labor economics.
+    
 </ul>
  </p>
     <h3>Contact</h3>
