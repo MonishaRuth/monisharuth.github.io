@@ -11,11 +11,7 @@ title: "Monisha Punith"
     <p>
       I’m a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank">AI-EconLab</a>. 
 
-My primary research interests are applied microeconometrics, public economics and labor economics.
-
-    body {
-  background-color: #ffffff;
-}
+My primary research interests are applied microeconometrics, labor economics and causal machine learning.
 
  </p>
     <h3>Contact</h3>
