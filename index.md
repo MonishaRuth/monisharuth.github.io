@@ -4,7 +4,7 @@ title: "Monisha Punith"
 ---
 
 <div class="intro-container">
-    <img src="assets/mona.jpg" style="max-width: 100px; height: auto;" alt="Profile picture">
+    <img src="assets/mona.jpg" style="max-width: 200px; height: auto;" alt="Profile picture">
 
   <div class="bio-content">
     <h2>About me</h2>
