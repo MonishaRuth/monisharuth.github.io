@@ -3,7 +3,7 @@ layout: default
 title: "Monisha Punith"
 ---
 
-<div class="intro-section">
+<div class="intro-container">
   <div class="profile-pic">
     <!-- Add your profile image file path here -->
     <img src="assets/mona.jpg" style="max-width: 300px; height: auto;" alt="Profile picture">
