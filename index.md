@@ -11,10 +11,10 @@ title: "Monisha Punith"
     <p>
       I’m a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank">AI-EconLab</a>. 
 
-My primary research interests are applied microeconometrics, labor economics and causal machine learning.
+My research exists between applied microeconometrics, causal machine learning and technological change, attempting to broden our understanding on the impacts of Artificial Intelligence on firm performance, the future of work, structural policies and growth. 
 
 <div class="line-with-pin">
-  <span>📍 Spring semester 25: visiting Örebro University and Ratio Institute, Stockholm </span>
+  <span>📍 Spring and fall semester 2025: reseach visit to Örebro University and Ratio Institute, Stockholm </span>
 </div>
 
  </p>
