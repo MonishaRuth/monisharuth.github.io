@@ -14,7 +14,9 @@ title: "Monisha Ruth - Applied Economics Researcher"
         </p>
         <div class="line-with-pin">
             <span>📍 University of Antwerp, Belgium </span>
-           <span>📍 Spring and fall semester 2025: reseach visit to Örebro University and Ratio Institute, Stockholm, Sweden </span>
+         </div> 
+        <div class="line-with-pin">
+           <span>📍 Spring and fall semester 2025: research visit to Örebro University and Ratio Institute, Stockholm, Sweden </span>
         </div>
         <h3>Contact</h3>
         <ul class="contact-info">
