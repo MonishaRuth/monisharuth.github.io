@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Monisha Punith"
+title: "Monisha Ruth"
 ---
 
 <div class="intro-container">
