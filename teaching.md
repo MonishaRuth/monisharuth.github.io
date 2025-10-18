@@ -3,11 +3,11 @@ layout: default
 title: Teaching and Tutoring 
 ---
 ### Since 2023-present
--Microeconomics (upcoming winter semester 2025-26).
+-Microeconomics, tutor. Graduate course in upcoming winter semester 2026.
 
--Research Methods in Economics: I tutored this graduate level course between Fall 2024-Spring 2025.  
+-Research Methods in Economics, tutor. Graduate purse between Fall 2024-Spring 2025.  
 
--Socio-Economic Analysis : I tutored this undergraduate level course during fall semester of 2023.
+-Socio-Economic Analysis, tutor. Undergraduate course during fall semester of 2023.
 
 ### 2022
 -Introductory Econometrics 
