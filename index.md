@@ -3,7 +3,7 @@ layout: default
 title: "Monisha Ruth - Applied Economics Researcher"
 ---
 <div class="intro-container">
-    <img src="{{ '/assets/edited_face.jpg' | relative_url }}" alt="Monisha Ruth">
+    <img src="{{ '/assets/momo.jpg' | relative_url }}" alt="Monisha Ruth">
     <div class="bio-content">
         <h2>About me</h2>
         <p>
