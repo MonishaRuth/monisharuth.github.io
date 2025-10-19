@@ -13,10 +13,10 @@
         }
 
         :root {
-            --primary: #1e3a8a;
-            --primary-light: #3b82f6;
-            --primary-dark: #1e40af;
-            --accent: #60a5fa;
+            --primary: #3b82f6;
+            --primary-light: #60a5fa;
+            --primary-dark: #2563eb;
+            --accent: #93c5fd;
             --text-dark: #1f2937;
             --text-light: #4b5563;
             --bg-light: #f8fafc;
@@ -78,27 +78,14 @@
 
         /* Header Banner */
         .header-banner {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
             padding: 4rem 2rem;
             position: relative;
             overflow: hidden;
         }
 
         .header-banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                linear-gradient(30deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
-                linear-gradient(150deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
-                linear-gradient(30deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
-                linear-gradient(150deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05));
-            background-size: 80px 140px;
-            background-position: 0 0, 0 0, 40px 70px, 40px 70px;
-            opacity: 0.3;
+            display: none;
         }
 
         .header-content {
@@ -392,7 +379,6 @@
     <nav>
         <div class="container">
             <div class="brand">
-                <h1>Monisha Ruth</h1>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
