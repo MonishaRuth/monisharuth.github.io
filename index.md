@@ -69,63 +69,6 @@
             color: var(--primary);
         }
 
-        .hero {
-            background: linear-gradient(135deg, #d4a373 0%, #9b8b7e 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .hero .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero .subtitle {
-            font-size: 1.25rem;
-            opacity: 0.95;
-            margin-bottom: 2rem;
-        }
-
-        .hero .affiliation {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .contact-links a {
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-
-        .contact-links a:hover {
-            color: var(--primary-dark);
-        }
-
-        .contact-links svg {
-            width: 20px;
-            height: 20px;
-        }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -168,13 +111,7 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: white;
-            font-weight: 600;
+            object-fit: cover;
         }
 
         .bio {
@@ -278,19 +215,32 @@
             text-decoration: underline;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background 0.3s;
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
-        .btn:hover {
-            background: var(--primary-dark);
+        .contact-links a {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--primary-dark);
+        }
+
+        .contact-links svg {
+            width: 20px;
+            height: 20px;
         }
 
         footer {
@@ -305,10 +255,6 @@
             nav ul {
                 gap: 1rem;
                 font-size: 0.9rem;
-            }
-
-            .hero h2 {
-                font-size: 2rem;
             }
 
             .about-content {
@@ -343,7 +289,7 @@
         <section id="home">
             <h2>About Me</h2>
             <div class="about-content">
-            <img src="momo.jpg" alt="Monisha Ruth" class="profile-image" style="object-fit: cover;">
+                <img src="momo.jpg" alt="Monisha Ruth" class="profile-image">
                 <div>
                     <div class="bio">
                         <p>I'm a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank" style="color: var(--primary);">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank" style="color: var(--primary);">AI-EconLab</a>.</p>
