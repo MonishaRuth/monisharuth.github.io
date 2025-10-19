@@ -78,10 +78,11 @@
 
         /* Header Banner */
         .header-banner {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            background: white;
             padding: 4rem 2rem;
             position: relative;
             overflow: hidden;
+            border-bottom: 1px solid var(--border);
         }
 
         .header-banner::before {
@@ -109,14 +110,14 @@
         }
 
         .header-text {
-            color: white;
+            color: var(--text-dark);
         }
 
         .header-text h2 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
             font-weight: 600;
-            color: white;
+            color: var(--primary);
             text-align: left;
         }
 
@@ -126,7 +127,7 @@
 
         .header-text .subtitle {
             font-size: 1.2rem;
-            opacity: 0.95;
+            color: var(--text-light);
             font-weight: 400;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
