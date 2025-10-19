@@ -70,7 +70,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #d4a373 0%, #9b8b7e 100%);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -143,12 +143,14 @@
             font-weight: 600;
             position: relative;
             padding-bottom: 0.5rem;
+            text-align: center;
         }
 
         h2::after {
             content: '';
             position: absolute;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: 0;
             width: 60px;
             height: 3px;
@@ -337,19 +339,11 @@
         </div>
     </nav>
 
-    <div class="hero">
-        <div class="container">
-            <h2>Monisha Ruth</h2>
-            <p class="subtitle">Doctoral Candidate in Applied Economics</p>
-            <p class="affiliation">University of Antwerp | AI-EconLab Research Fellow</p>
-        </div>
-    </div>
-
     <div class="container">
         <section id="home">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="profile-image">MR</div>
+            <img src="momo.jpg" alt="Monisha Ruth" class="profile-image" style="object-fit: cover;">
                 <div>
                     <div class="bio">
                         <p>I'm a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank" style="color: var(--primary);">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank" style="color: var(--primary);">AI-EconLab</a>.</p>
