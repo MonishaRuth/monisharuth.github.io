@@ -13,28 +13,32 @@
         }
 
         :root {
-            --primary: #2563eb;
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
             --primary-dark: #1e40af;
+            --accent: #60a5fa;
             --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f9fafb;
-            --border: #e5e7eb;
+            --text-light: #4b5563;
+            --bg-light: #f8fafc;
+            --border: #e2e8f0;
+            --white: #ffffff;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
             color: var(--text-dark);
-            background: #ffffff;
+            background: var(--white);
         }
 
+        /* Navigation */
         nav {
             background: white;
             border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         nav .container {
@@ -47,9 +51,10 @@
         }
 
         nav h1 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            color: var(--text-dark);
+            color: var(--primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         nav ul {
@@ -63,10 +68,80 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
             color: var(--primary);
+        }
+
+        /* Header Banner */
+        .header-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(30deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
+                linear-gradient(150deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
+                linear-gradient(30deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05)),
+                linear-gradient(150deg, rgba(255,255,255,0.05) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.05) 87.5%, rgba(255,255,255,0.05));
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+            opacity: 0.3;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .header-text {
+            color: white;
+        }
+
+        .header-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: white;
+            text-align: left;
+        }
+
+        .header-text h2::after {
+            display: none;
+        }
+
+        .header-text .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 400;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         .container {
@@ -80,132 +155,158 @@
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.9rem;
             margin-bottom: 1.5rem;
-            color: var(--text-dark);
+            color: var(--primary);
             font-weight: 600;
             position: relative;
-            padding-bottom: 0.5rem;
-            text-align: center;
+            padding-bottom: 0.75rem;
+            text-align: left;
+            border-bottom: 2px solid var(--border);
         }
 
         h2::after {
             content: '';
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            width: 60px;
-            height: 3px;
+            left: 0;
+            bottom: -2px;
+            width: 80px;
+            height: 2px;
             background: var(--primary);
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 2rem;
-            align-items: start;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
         }
 
         .bio {
             color: var(--text-light);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .bio p {
+            margin-bottom: 1rem;
+        }
+
+        .bio a {
+            color: var(--primary-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .bio a:hover {
+            border-bottom-color: var(--primary-light);
+        }
+
+        .location-note {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 1.5rem;
+            background: #fef3c7;
+            border-left: 3px solid #f59e0b;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+            color: #92400e;
         }
 
         .research-interests {
             background: var(--bg-light);
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 8px;
-            margin-top: 1.5rem;
+            border: 1px solid var(--border);
+            margin-top: 2rem;
         }
 
         .research-interests h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: var(--text-dark);
+            color: var(--primary);
+            font-weight: 600;
         }
 
         .research-interests ul {
             list-style: none;
             display: grid;
-            gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.75rem;
         }
 
         .research-interests li {
             padding-left: 1.5rem;
             position: relative;
             color: var(--text-light);
+            line-height: 1.6;
         }
 
         .research-interests li::before {
-            content: '→';
+            content: '▪';
             position: absolute;
             left: 0;
-            color: var(--primary);
+            color: var(--primary-light);
             font-weight: bold;
+            font-size: 1.2rem;
         }
 
         .card {
             background: white;
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
             transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         .card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1);
+            border-color: var(--accent);
         }
 
         .card h3 {
-            color: var(--text-dark);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+            font-weight: 600;
         }
 
         .card p {
             color: var(--text-light);
             margin-bottom: 0.5rem;
+            line-height: 1.7;
         }
 
         .card .meta {
-            color: var(--text-light);
+            color: #9ca3af;
             font-size: 0.9rem;
             font-style: italic;
         }
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .contact-item {
             background: var(--bg-light);
-            padding: 1.5rem;
+            padding: 1.75rem;
             border-radius: 8px;
+            border: 1px solid var(--border);
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
         }
 
         .contact-item strong {
-            color: var(--text-dark);
+            color: var(--primary);
             font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .contact-item a {
-            color: var(--primary);
+            color: var(--primary-light);
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -219,9 +320,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2rem;
+            gap: 2.5rem;
             flex-wrap: wrap;
             margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 8px;
         }
 
         .contact-links a {
@@ -232,23 +336,25 @@
             gap: 0.5rem;
             font-size: 1rem;
             transition: color 0.3s;
+            font-weight: 500;
         }
 
         .contact-links a:hover {
-            color: var(--primary-dark);
+            color: var(--primary-light);
         }
 
         .contact-links svg {
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
         }
 
         footer {
-            background: var(--text-dark);
+            background: var(--primary);
             color: white;
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         @media (max-width: 768px) {
@@ -257,18 +363,27 @@
                 font-size: 0.9rem;
             }
 
-            .about-content {
+            .header-banner {
+                padding: 3rem 1.5rem;
+            }
+
+            .header-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 2rem;
             }
 
             .profile-image {
                 margin: 0 auto;
             }
 
-            h2::after {
-                left: 50%;
-                transform: translateX(-50%);
+            .header-text h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .research-interests ul {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -287,38 +402,43 @@
         </div>
     </nav>
 
+    <div class="header-banner">
+        <div class="header-content">
+            <img src="assets/momo.jpg" alt="Monisha Ruth" class="profile-image">
+            <div class="header-text">
+                <h2>Monisha Ruth</h2>
+                <p class="subtitle">Doctoral Candidate in Applied Economics</p>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <section id="home">
             <h2>About Me</h2>
-            <div class="about-content">
-                <img src="assets/momo.jpg" alt="Monisha Ruth" class="profile-image">
-                <div>
-                    <div class="bio">
-                        <p>I'm a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank" style="color: var(--primary);">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank" style="color: var(--primary);">AI-EconLab</a>.</p>
-                        
-                        <p style="margin-top: 1rem;">My research exists between applied microeconometrics, causal machine learning, and technological change, attempting to broaden our understanding of the impacts of Artificial Intelligence on firm performance, the future of work, structural policies, and growth.</p>
-                        
-                        <p style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#dc2626" viewBox="0 0 24 24" stroke="#dc2626" style="width: 20px; height: 20px; flex-shrink: 0;">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            Currently on research visit to Sweden for Spring and Fall 2025.
-                        </p>
-                    </div>
-                    
-                    <div class="research-interests">
-                        <h3>Research Interests</h3>
-                        <ul>
-                            <li>Applied Microeconometrics</li>
-                            <li>Causal Machine Learning</li>
-                            <li>AI & Technological Change</li>
-                            <li>Firm Performance & Productivity</li>
-                            <li>Future of Work</li>
-                            <li>Structural Policies & Economic Growth</li>
-                        </ul>
-                    </div>
+            <div class="bio">
+                <p>I'm a doctoral candidate in applied economics at the <a href="https://www.uantwerpen.be/en/staff/monisha-punith_24540/" target="_blank">Department of Economics</a> at the University of Antwerp, Belgium. I am also a research fellow at the <a href="https://www.ai-econlab.com/people" target="_blank">AI-EconLab</a>.</p>
+                
+                <p>My research exists between applied microeconometrics, causal machine learning, and technological change, attempting to broaden our understanding of the impacts of Artificial Intelligence on firm performance, the future of work, structural policies, and growth.</p>
+                
+                <div class="location-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#f59e0b" viewBox="0 0 24 24" stroke="#f59e0b" style="width: 20px; height: 20px; flex-shrink: 0;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Currently on research visit to Sweden for Spring and Fall 2025.
                 </div>
+            </div>
+            
+            <div class="research-interests">
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Applied Microeconometrics</li>
+                    <li>Causal Machine Learning</li>
+                    <li>AI & Technological Change</li>
+                    <li>Firm Performance & Productivity</li>
+                    <li>Future of Work</li>
+                    <li>Structural Policies & Economic Growth</li>
+                </ul>
             </div>
         </section>
 
